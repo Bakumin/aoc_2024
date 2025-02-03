@@ -16,6 +16,7 @@ mod day11;
 mod day12;
 mod day13;
 mod day14;
+mod day15;
 
 fn main() {
     //day1::part1();
@@ -49,10 +50,8 @@ fn main() {
     //day12::part2();
     //day13::part1();
     //day13::part2();
-    day14::part2();
+    //day14::part2();
+    day15::part1();
 }
 
-pub fn split_paragraphs(file_path: impl AsRef<Path>) -> Vec<String> {
-    fs::read_to_string(file_path).unwrap().split("\r\n\r\n").map(|s| s.to_string()).collect::<Vec<String>>()
 
-}
